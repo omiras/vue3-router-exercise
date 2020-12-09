@@ -5,10 +5,10 @@
             <span>Todo app</span>
       <ul>
         <li>
-          <!-- Add a router-link to /todos -->
+          <router-link to="/todos">Todo list</router-link>
         </li>
         <li>
-          <!-- Add a router-link to /add-task -->
+         <router-link to="/add-todo">Add todo</router-link>
         </li>
       </ul>
         </div>
@@ -34,7 +34,7 @@ nav {
 
 ul {
   list-style: none;
-  margin: 0;
+  margin-top: -50px;
   padding: 0;
   height: 100%;
   display: flex;
@@ -60,9 +60,9 @@ a {
 a:hover,
 a:active,
 a.active {
-  color: #f1a80a;
-  border-color: #f1a80a;
-  background-color: #1a037e;
+  color: white;
+  border-color: #82d2d4;
+  background-color: #525253;
 }
 
 span {

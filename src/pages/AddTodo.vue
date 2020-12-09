@@ -16,9 +16,10 @@ export default {
   },
   methods: {
     submitForm() {
-      !!this.todo?.trim() &&
-        this.todos.push({ id: new Date().toString, name: this.todo });
-      // navigate to /todos
+      if (this.todo?.trim()) {
+        this.todos.push({ id: new Date().toString(), name: this.todo });
+        this.$router.push({ name: "todos" });
+      }
     },
   },
 };
