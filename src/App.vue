@@ -1,26 +1,47 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <the-navigation></the-navigation>
+  <main>
+    <!-- add a default router-view -->
+  </main>
+  <footer>
+    <!-- add a named footer router-view -->
+  </footer>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TheNavigation from "./components/nav/TheNavigation.vue";
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    TheNavigation,
+  },
+  data() {
+    return {
+      todos: [
+        { id: "t1", name: "Todo 1" },
+        { id: "t2", name: "Todo 2" },
+        { id: "t3", name: "Todo 3" },
+      ],
+    };
+  },
+  provide() {
+    return {
+      todos: this.todos,
+    };
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
 }
 </style>
