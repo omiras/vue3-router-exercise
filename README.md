@@ -26,7 +26,7 @@
    Use this component in the footer named router-view (`App.vue`) for `/todos` and `/add-todo` urls.
    
    
-**Note:** Not needed for this exercise, but pay attention how "inject" and "proivde" [works](https://v3.vuejs.org/guide/composition-api-provide-inject.html). 
+**Note:** Not needed for this exercise, but pay attention how "inject" and "provide" [works](https://v3.vuejs.org/guide/composition-api-provide-inject.html). 
 App.vue needs to pass data to TodoList.vue. Instead of passing it as a __prop__; it us passed with __provide__. This will make the data "todos" available to child components.
 
 ## Project setup
