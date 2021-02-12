@@ -16,6 +16,7 @@
 3) Fill `App.vue`, and add 2 `router-view`.
    Check the comments inside the file.
    About [named routes](https://next.router.vuejs.org/guide/essentials/named-routes.html#named-routes)
+   Note: you will not see any footer, yet.
 
 4) Fill `TheNavigation.vue` and add 2 `router-link`.
    Check the comments inside the file.
