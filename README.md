@@ -19,6 +19,7 @@
 
 4) Fill `TheNavigation.vue` and add 2 `router-link`.
    Check the comments inside the file.
+   Note how the a:active class is autoamatically applied depending of the ![URL path](https://oscarm.tinytake.com/media/f43a86?filename=1613111800747_TinyTake12-02-2021-07-36-34_637487086046750462.png&sub_type=thumbnail_preview&type=attachment&width=1199&height=506)
 
 5) In `AddTodo.vue` file, navigate to `/todos` url when the user add a todo.
    Check the comment inside the file.
