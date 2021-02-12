@@ -25,6 +25,7 @@
 5) In `AddTodo.vue` file, navigate to `/todos` url when the user add a todo.
    Check the comment inside the file.
    Hint: manual navigation is also called "programmatic navigation". Look for this concept in [Vue Router documentation](https://next.router.vuejs.org/).
+   Hint: inside a component, you can access to the "router" object with "this.$router"
 
 6) Finally add a component `TheFooter.vue` in `src/components/UI`. Display any text.
    Use this component in the footer named router-view (`App.vue`) for `/todos` and `/add-todo` urls.
